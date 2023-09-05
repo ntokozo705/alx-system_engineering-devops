@@ -1,1 +1,1 @@
-first readme file for 0x03-shell_variables_expansions
+First readme file for 0x03-shell_variables_expansions
