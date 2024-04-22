@@ -1,0 +1,20 @@
+sudo service mysql stop
+echo "stop mysql"
+
+echo "NB! about to remove mysql"
+
+sudo apt-get purge mysql-server
+
+sudo apt-get autoremove
+
+echo "removing directory"
+
+sudo rm -r /var/lib/mysql
+
+sudo apt-get update -y
+
+sudo apt-get install mysql-server
+
+sudo service mysql start
+
+sudo mysql_secure_installation
